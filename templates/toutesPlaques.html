@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>lecture toutes plaques</title>
+    </head>
+    <body>
+        <h1> Database results!</h1>
+        {% for item in results %}
+        <h2> datetime: {{ item.datetime }} plaque: {{ item.plaque }}
+            <img src='data:image/png;base64, {{ item.image }}'width="50px",height="50px" />
+        </h2>
+        {% endfor %}
+    </body>
+</html>

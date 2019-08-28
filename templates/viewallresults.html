@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Database results!</h1>
+{% for item in results %}
+<h2> ID: {{ item.id }} Name: {{ item.name }} Location: {{ item.location }}</h2>
+{% endfor %}
+</body>
+</html>
